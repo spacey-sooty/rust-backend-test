@@ -28,13 +28,43 @@
     {
       "label": "git commit",
       "type": "shell",
-      "command": "./push.bat",
+      "command": "./.vscode/push.bat",
       "group": "none",
       "presentation": {
         "reveal": "always",
         "panel": "new"
       }
 
+    },
+
+    {
+      "label": "cargo run",
+      "type": "cargo",
+      "command": "run",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+    },
+
+    {
+      "label": "npm build",
+      "type": "npm",
+      "script": "build",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
     }
   ],
 
