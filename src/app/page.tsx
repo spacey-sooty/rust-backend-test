@@ -1,13 +1,9 @@
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import styles from './styles/page.module.scss'
-
-const inter = Inter({ subsets: ['latin'] })
+import App from './app'
 
 export default function Home() {
   return (
-    <div>
-      <p> Hello World! </p>
-    </div>
+    App({})
   )
 }
